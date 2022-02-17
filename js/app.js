@@ -19,7 +19,7 @@ async function getData() {
 
   // Show Toggle
   $(document).ready(() => {
-    $("#show").on("click", (e) => {
+    $("#show").on("click touchstart", (e) => {
       e.preventDefault();
       $("#movies").toggle(showAll());
     });
@@ -29,8 +29,8 @@ async function getData() {
     let output = "";
     $.each(movies, (index, movie) => {
       output += `
-      <div class="col-md-3 g-3">
-      <div class="card h-100" >
+      <div class="col-md-3 my-2 g-3">
+      <div class="card  h-100" >
        <img src="${movie.image.medium}" class="card-img-top" alt="...">
        <div class="card-body d-flex flex-column">
          <h4 class="card-title text-center">${movie.name}</h4>
@@ -84,10 +84,10 @@ async function getData() {
       let optionCard = "";
       if (movie.id === option) {
         optionCard = `
-        <div class="d-flex justify-content-center">
-     <div class="card h-100 w-25" >
-      <img src="${movie.image.medium}" class="card-img-top" alt="...">
-      <div class="card-body d-flex flex-column">
+        <div class="col-12 my-2 w-100">
+        <div class="card  h-100" >
+         <img src="${movie.image.medium}" class="card-img-top" alt="...">
+        <div class="card-body d-flex flex-column">
         <h4 class="card-title text-center">${movie.name}</h4>
         <h5 class="card-title text-center">Season : <span class="secondaryOne-color">${
           movie.season
@@ -118,7 +118,7 @@ async function getData() {
       }
     });
   });
-  
+
   // Search Functionality
 
   searchForm.addEventListener("keydown", (e) => {
@@ -131,7 +131,7 @@ async function getData() {
       ) {
         card += `
 
-      <div class="col-md-3 g-3">
+      <div class="col-md-3 my-2 g-3">
      <div class="card h-100" >
       <img src="${movie.image.medium}" class="card-img-top" alt="...">
       <div class="card-body d-flex flex-column">

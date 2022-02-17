@@ -24,7 +24,7 @@
   color: var(--secondaryTwo);
 }
 .bg {
-  background: url(../img/bg.webp);
+  background: url(../img/bg.webp) center;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
