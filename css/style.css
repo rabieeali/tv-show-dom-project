@@ -1,0 +1,125 @@
+@font-face {
+  font-family: "gore";
+  src: url(../fonts/SomethingStrange-vjYD.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --lighter: #eeefe8;
+  --light: #FCE990;
+  --yellow: #FCDC4D;
+  --secondaryOne: #CB793A;
+  --secondaryTwo: #9A031E;
+  --secondaryThree: #5F0F40;
+  --dark: #1f1b30;
+  --gore: "gore";
+}
+.font-gore{
+  font-family: var(--gore);
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--secondaryTwo);
+}
+.bg {
+  background: url(../img/bg.webp);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.light-color {
+  color: var(--light);
+}
+
+.dark-color {
+  color: var(--dark);
+}
+.secondaryOne-color {
+  color: var(--secondaryOne);
+}
+.secondaryTwo-color {
+  color: var(--secondaryTwo);
+}
+.secondaryThree-color {
+  color: var(--secondaryThree);
+}
+.yellow-color {
+  color: var(--yellow);
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: var(--lighter);
+  transition: all ease-in-out 0.2s;
+  -webkit-transition: all ease-in-out 0.2s;
+  -moz-transition: all ease-in-out 0.2s;
+  -ms-transition: all ease-in-out 0.2s;
+  -o-transition: all ease-in-out 0.2s;
+}
+a:hover {
+  color: var(--secondaryOne);
+}
+
+#searchText,#searchText:focus{
+  text-align: center;
+  color: var(--dark);
+  background-color:transparent;
+  border: none;
+  border-radius: 0;
+  border-bottom: 2px solid;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+#searchText::placeholder{
+  color: var(--dark);
+  font-size: 14px;
+}
+nav ul li a:hover {
+  background-color: var(--light);
+}
+.searchbtn {
+  border: none;
+  background-color: transparent;
+  color: var(--dark);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.searchbtn:hover {
+  background-color: var(--lighter);
+}
+
+.btn-watch {
+  background-color: var(--secondaryTwo);
+  color: var(--lighter);
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+  -webkit-transition: all ease-in-out 0.3s;
+  -moz-transition: all ease-in-out 0.3s;
+  -ms-transition: all ease-in-out 0.3s;
+  -o-transition: all ease-in-out 0.3s;
+}
+.btn-watch:hover {
+  background-color: var(--secondaryOne);
+}
+.card-body {
+  background-color: var(--dark);
+  color: var(--lighter);
+}
+
+.form-select{
+  background-color: var(--yellow);
+  color: var(--secondaryThree);
+}
