@@ -43,7 +43,7 @@ async function getData() {
          <p class="card-text font-3">${
            movie.summary.substring(0, 90) + " ..."
          }</p>
-         <div class="row">
+         <div class="row ">
          <p class="col-6  text-start"><i class="fas fa-clock mx-2"></i>${
            movie.runtime
          } Mins</p>
@@ -84,8 +84,8 @@ async function getData() {
       let optionCard = "";
       if (movie.id === option) {
         optionCard = `
-        <div class="col-12 my-2 w-100">
-        <div class="card  h-100" >
+        <div class="col-10 offset-1 my-2">
+        <div class="card h-100" >
          <img src="${movie.image.medium}" class="card-img-top" alt="...">
         <div class="card-body d-flex flex-column">
         <h4 class="card-title text-center">${movie.name}</h4>
@@ -96,7 +96,7 @@ async function getData() {
           movie.number
         }</span></h6>
         <p class="card-text font-3">${
-          movie.summary.substring(0, 90) + " ..."
+          movie.summary
         }</p>
         <div class="row">
         <p class="col-6  text-start"><i class="fas fa-clock mx-2"></i>${
